@@ -1,0 +1,38 @@
+аккаунт mysql:
+	имя: mushroom
+	пароль: mushroom
+
+база данных mysql:
+	имя базы данных: mushroom_database
+
+
+
+CREATE TABLE mushroom_post (post_description VARCHAR(400),name VARCHAR(400),image VARCHAR(400) PRIMARY KEY,user VARCHAR(400),likes INT);
+таблица с постами:
+	имя таблицы: mushroom_post
+	поля таблицы:
+		post_description(varchar):описание поста (400 символов максимум),
+		name(varchar):имя поста,
+		image(varchar):картинка,
+		user(varchar):пользователь, который сделал пост,
+		likes(integer):число лайков поста,
+
+
+
+CREATE TABLE mushroom_comment (comment_id VARCHAR(400) PRIMARY KEY,comment_text VARCHAR(5000),likes INT);
+таблица с комментариями:
+	имя таблицы: mushroom_comment
+	поля таблицы:
+		user(varchar):автор комментария,
+		comment_text(varchar):содержание комментария (5000 символов максимум),
+		likes(integer):число лайков комментария
+
+
+
+CREATE TABLE mushroom_accounts (login VARCHAR(40),password VARCHAR(40),admin INT, PRIMARY KEY (login));
+таблица с аккаунтами:
+	имя таблицы: mushroom_accounts
+	поля таблицы:
+		login(varchar):логин пользователя (40 символов максимум),
+		password(varchar):пароль пользователя (40 символов максимум),
+		admin(integer):пользователь - админ(числа, которые не 0), пользователь - не админ (число  0)
