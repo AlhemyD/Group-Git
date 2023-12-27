@@ -1,0 +1,469 @@
+body{
+    margin: 0px;
+	padding: 0px;
+    background-color: #e8e4df;
+}
+.gradient {
+    background: linear-gradient(#3a1452,  #561a79, rgb(124, 68, 137));
+}
+.gradient1 {
+    background: linear-gradient(rgb(124, 68, 137),  #561a79, #3a1452);
+}
+
+/*-------------------------*/
+.head{
+    height: 20%;
+    width: 100%;
+    color: #e8e4df;
+}
+.inside{
+    padding: 20px;
+    font-size: 20px;
+}
+.down, .up{
+    display: flex;
+    flex-direction: row;
+}
+.down{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.FBKI{
+    margin-left: 20px;
+    margin-right: auto;
+}
+.down>div{
+    /* border: solid #561568 2px; */
+    padding: 0.5%;
+}
+.universe{
+    margin-left: auto;
+    margin-right: 15%;
+} 
+div[class*=box] {
+    height: 30%;
+    /* width: 80%;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1{
+    margin-left: 27%;
+}
+.box-1 a{
+    text-decoration: none;
+}
+.box-2{
+    margin-left: 1%;
+}
+.box-2 a{
+    text-decoration: none;
+}
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+.btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+/*-------------------------*/
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.card-info {
+    margin-right: 20px;
+    padding-top: 15px;
+    width: 700px;
+    background-color: #3a1452e5;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+.card-map {
+    margin-right: 20px;
+    width: 750px;
+}
+.card-info-title {
+    color: white;
+    margin: 0px;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card-info-line {
+    border: 2px white solid;
+}
+.card-info-text {
+    font-size: 22px;
+    color: white;
+    padding-right: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+} 
+
+/*-------------------------*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    color: #e8e4df;
+    font-size: 20px;
+}
+.footer>div{
+    margin: 20px;
+    padding: 1%;
+}
+.feedback{
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.feedback>div{
+    margin: 10px;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+textarea {
+    resize: none;
+} 
+.contact{
+    width: 38%;
+    text-align: center;
+}
+.contact>div{
+    margin: 10px;
+    margin-top: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.cont-text{
+    margin-top: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.CC{
+    width: 30%;
+    font-size: 15px;
+    margin: 20px;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+textarea {
+    height: 9em;
+    width: 17em;
+}
+
+
+@media screen and (max-width: 1240px) {
+	.card-info-text {
+        font-size: 20px;
+	}
+    .card-map{
+        margin-right: 15px;
+        width: 400px;
+        height: 280px;
+        padding-top: 10px;
+    }
+    .card-info{
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+    .card-info-title{
+        font-size: 30px;
+    }
+    .main{
+        padding: 10px;
+        padding-left: 30px;
+        font-size: 20%;
+    }
+    
+    .inside{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .btn {
+        line-height: 50px;
+        height: 50px;
+        width: 200px;
+    }
+    .box-1{
+        margin-left: 26%;
+    }
+
+    .footer{
+        font-size: 20px;
+    }
+    .footer>div{
+        margin: 20px;
+        padding: 1%;
+    }
+    .feedback{
+        width: 32%;
+    }
+    .feedback>div{
+        margin: 10px;
+        margin-top: 30px;
+    }
+    .contact{
+        width: 38%;
+    }
+    .contact>div{
+        margin: 10px;
+    }
+    .CC{
+        width: 30%;
+        font-size: 15px;
+        margin: 20px;
+        margin-top: 30px;
+    }
+    textarea {
+        height: 9em;
+        width: 17em;
+    }
+}
+
+@media screen and (max-width:960px) {
+	.card-info-text {
+        font-size: 17px;
+	}
+    .card-map{
+        margin-right: 15px;
+        width: 500px;
+        height: 300px;
+        padding-top: 10px;
+    }
+    .card-info{
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+    .card-info-title{
+        font-size: 27px;
+    }
+    .main{
+        padding: 10px;
+        padding-left: 30px;
+        font-size: 20%;
+    }
+    
+    .inside{
+        padding: 17px;
+        font-size: 17px;
+    }
+    .btn {
+        line-height: 40px;
+        height: 40px;
+        width: 170px;
+    }
+    .box-1{
+        margin-left: 15%;
+    }
+
+    .footer{
+        font-size: 17px;
+    }
+    .footer>div{
+        margin: 17px;
+        padding: 1%;
+    }
+    .feedback{
+        width: 32%;
+    }
+    .feedback>div{
+        margin: 8px;
+        margin-top: 22px;
+    }
+    .contact{
+        width: 38%;
+    }
+    .contact>div{
+        margin: 8px;
+    }
+    .CC{
+        width: 30%;
+        font-size: 11px;
+        margin: 17px;
+        margin-top: 24px;
+    }
+    textarea {
+        height: 7em;
+        width: 12em;
+    }
+}
+
+@media screen and (max-width:768px) {
+	.card-info-text {
+        font-size: 15px;
+	}
+    .card-map{
+        margin-right: 15px;
+        width: 250px;
+        height: 250px;
+        padding-top: 10px;
+    }
+    .card-info{
+        margin-right: 15px;
+        padding-top: 15px;
+    }
+    .card-info-title{
+        font-size: 25px;
+    }
+    .main{
+        padding: 10px;
+        padding-left: 30px;
+        font-size: 20%;
+    }
+    
+    .inside{
+        padding: 13px;
+        font-size: 12px;
+    }
+    .btn {
+        line-height: 30px;
+        height: 30px;
+        width: 120px;
+    }
+    .box-1{
+        margin-left: 20%;
+    }
+	
+    .footer{
+        font-size: 13px;
+    }
+    .footer>div{
+        margin: 13px;
+        padding: 1%;
+    }
+    .feedback{
+        width: 32%;
+    }
+    .feedback>div{
+        margin: 7px;
+        margin-top: 30px;
+    }
+    .contact{
+        width: 38%;
+    }
+    .contact>div{
+        margin: 7px;
+    }
+    .CC{
+        width: 30%;
+        font-size: 8px;
+        margin: 13px;
+        margin-top: 18px;
+    }
+    textarea {
+        height: 5em;
+        width: 9em;
+    }
+}
+@media screen and (max-width:576px) {
+	.inside{
+        padding: 10px;
+        font-size: 9px;
+    }
+    .btn {
+        line-height: 20px;
+        height: 20px;
+        width: 100px;
+    }
+    .box-1{
+        margin-left: 10%;
+    }
+
+    .card-info-text {
+        font-size: 9px;
+        }
+    .card-map{
+        margin-right: 15px;
+        width: 150px;
+        height: 200px;
+        padding-top: 10px;
+    }
+    .card-info{
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+    .card-info-title{
+        font-size: 10px;
+    }
+    .card{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+    .footer>div{
+        margin: 10px;
+        padding: 1%;
+    }
+    .feedback{
+        width: 32%;
+    }
+    .feedback>div{
+        margin: 5px;
+        margin-top: 15px;
+    }
+    .contact{
+        width: 38%;
+    }
+    .contact>div{
+        margin: 5px;
+    }
+    .CC{
+        width: 30%;
+        font-size: 7px;
+        margin: 10px;
+        margin-top: 15px;
+    }
+    textarea {
+        height: 4em;
+        width: 6em;
+    }
+}

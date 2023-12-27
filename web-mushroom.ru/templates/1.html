@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MushrooM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="../static/css/project2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="head gradient">
+            <div class="inside">
+                <div class="up">
+                    <div class="FBKI">
+                        <img src="../static/images/img3/grib3.png" width="15%" class="grib">
+                        <h1 class="text_grib">MushrooM</h1>
+                        <img src="../static/images/img3/grib3.png" width="15%" class="grib">
+                    </div>
+                    
+                </div>
+                <div class="down">
+                    <div class="box-1">
+                        <a href='../../'>
+                            <div class="btn" class="block">
+                                <span>Лента</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-2">
+                        <a href='/post'>
+                            <div class="btn" class="block">
+                                <span>Мои посты</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="add_post" id="block1" onclick="toggleBlock('block2')">
+                <div class="add_post_text">
+                    Загрузить пост
+		    {{msg}}
+                </div>
+            </div>
+            <div class="add_post_settings" id="block2">
+		    <form  class="download_form" method="POST" action="/post" enctype="multipart/form-data">
+                    <div class="load_pic">
+                        <input class="download_file" name="post_picture" type="file" name="file">
+                        <img src="../static/images/img3/plus.png" alt="plus" width="60%" class="plus">
+                    </div>
+                    <div class="load_desk">              
+                        <input type="text" name="post_name" class="name_post_add" placeholder="Введите название поста"></input>
+                        <input type="text" name="post_description" class="text_post_add" placeholder="Введите описание поста"></input>
+                        <input type="submit" id="publish" class="send_button" value="Опубликовать">            
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="footer gradient1">
+            <div class="contact">
+                <a href="https://vk.com/club216673211"><img src="../static/images/img3/vk-64x64.png" alt="ВК" width="15%"></a>
+            </div>
+        </div>
+    </div>
+    <script src=""></script>
+</body>
+</html>

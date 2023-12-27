@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MushrooM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="../static/css/project.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="head gradient">
+            <div class="inside">
+                <div class="FBKI">
+                    <img src="../static/images/img3/grib3.png" alt="ВК" width="15%" class="grib1">
+                    <img src="../static/images/img3/grib3.png" alt="ВК" class="griblit1">
+                    <img src="../static/images/img3/grib3.png" alt="ВК" class="griblit2">
+                    <h1 class="text_grib">MushrooM</h1>
+                    <img src="../static/images/img3/grib3.png" alt="ВК" width="15%" class="grib2">
+                    <img src="../static/images/img3/grib3.png" alt="ВК" class="griblit3">
+                </div>
+
+                <div class="down">
+                    <div class="box-1">
+                        <a href='./'>
+                            <div class="btn" class="block">
+                                <span>Лента</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-2">
+                        <a href='/post'>
+                            <div class="btn" class="block">
+                                <span>Мои посты</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="registratsia">
+                    <div class="block_reg">
+                      <span id="toggleForm">Вход/Регистрация</span>
+                    </div>
+                    <div id="formContainer" style="display: none;">
+                        <input type="text" placeholder="Логин" style="width: 200px; height: 25px;">
+                        <input type="password" placeholder="Пароль" style="width: 200px; height: 25px;">
+                        <button class="send">Войти</button>
+                        <a href='/register'>
+                            <button class="zareg">Зарегистрироваться</button>
+                        </a>
+                    </div>
+                    </div>
+                    <div id="userContainer" style="display: none;"></div>
+                    <div id="acc" style="display: none;">
+                        <a href='/post'>
+                            <div>
+                            <button style="display: inline-block;">Мои посты</button>
+                        </div>
+                        </a>
+                        <div>
+                            <button style="display: inline-block;" id="exit">Выход</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+		<form action="/register" method="POST">
+                <div class="regform">
+                    <h2>Регистрация</h2>
+                    <input type="text" name='username' placeholder="Логин" style="width: 250px; height: 35px;">
+                    <input type="text" name='password' placeholder="Пароль" style="width: 250px; height: 35px;">
+                    <button class="zareg2">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer gradient1">
+            <div>
+                <div class="feedback">
+                    <div>
+                        <p>Отзывы и предложения</p>
+                        <button class="send1">Отправить</button>
+                    </div>
+                    <div>
+                        <textarea name="about-text" id="messages"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="cont-text">
+                    <p>Наши контакты:</p>
+                </div>
+                <div>
+                    <a href="https://vk.com/club216673211"><img src="../static/images/img3/vk-64x64.png" alt="ВК" width="15%"></a>
+                    <a href="https://t.me/fbki_isu"><img src="../static/images/img3/telegramm.png" alt="Телеграмм" width="15%"></a>
+                </div>
+            </div>
+            <div class="CC">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/project.js"></script>
+</body>
+</html>
